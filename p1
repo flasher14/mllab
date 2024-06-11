@@ -18,13 +18,10 @@ for x in data:
 print("\n")
 
 TotalExamples = len(data)
-i=0
-j=0
-k=0
+i=j=k=0
 print("The steps of the Find-s algorithm are\n",hypo)
 list = []
-p=0
-d=len(data[p])-1;
+d=len(data[0])-1;
 for j in range(d):	
 	list.append(data[i][j])
 hypo=list
@@ -36,7 +33,7 @@ for i in range(TotalExamples):
 		
 		
 	print(hypo)
-i=i+1
+
 
 
 print("\nThe maximally specific Find-s hypothesis for the given training examples is")
